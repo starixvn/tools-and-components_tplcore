@@ -1,0 +1,11 @@
+﻿* How to debug a Visual Studio Addin:
+- Copy TplBuilder2010.AddIn to the folder: %VSMYDOCUMENTS%\Addins (example on VS2010: C:\Users\leo.vo\Documents\Visual Studio 2010\Addins).
+- Run addin application under debugging mode to open a new instance of Visual Studio.
+- On the new instance, go to Tools->Add-in Manager, and check the addin which you want to debug.
+- And go ...
+
+* How to create a Visual Studio Content Installer:
+- Create a .vsconnect.
+- Using a ZIP tool (Windows 7 support Send to -> Compress) to compress all files (.Addin, .vscontent, & necessary DLLs).
+- Rename .zip to . vsi.
+- Deploy it.

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TplBuilder</name>
+    </assembly>
+    <members>
+        <member name="M:TplBuilder.Utils.GetDirPath(System.String)">
+            <summary>
+            Get directory path from file path
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TplBuilder.Utils.GetFileName(System.String)">
+            <summary>
+            Get file name from file path
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TplBuilder.Utils.IsEmptyFolder(System.String,System.String)">
+            <summary>
+            check folder is empty
+            </summary>
+            <param name="dirPath"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TplBuilder.frmFileMapping.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TplBuilder.frmFileMapping.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TplBuilder.frmFileMapping.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TplBuilder.Connect">
+            <summary>The object for implementing an Add-in.</summary>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:TplBuilder.Connect.#ctor">
+            <summary>Implements the constructor for the Add-in object. Place your initialization code within this method.</summary>
+        </member>
+        <member name="M:TplBuilder.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:TplBuilder.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:TplBuilder.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:TplBuilder.Connect.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:TplBuilder.Connect.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:TplBuilder.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:TplBuilder.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
+            <param term='commandName'>The name of the command to execute.</param>
+            <param term='executeOption'>Describes how the command should be run.</param>
+            <param term='varIn'>Parameters passed from the caller to the command handler.</param>
+            <param term='varOut'>Parameters passed from the command handler to the caller.</param>
+            <param term='handled'>Informs the caller if the command was handled or not.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:TplBuilder.Execute.DeleteProjectFolder(System.String)">
+            <summary>
+            delete a folder in project
+            </summary>
+            <param name="dirPath"></param>
+        </member>
+        <member name="M:TplBuilder.Execute.DeleteProjectFile(System.String)">
+            <summary>
+            delete a find in project
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:TplBuilder.Execute.BuildTemplate(System.String)">
+            <summary>
+            Build a specified template file.
+            </summary>
+            <param name="filePath">Full path of the template file.</param>
+        </member>
+        <member name="M:TplBuilder.Execute.BuildTemplateFolder(System.String)">
+            <summary>
+            Build all template file in specified folder.
+            </summary>
+            <param name="folder">Full path of a folder.</param>
+        </member>
+        <member name="T:TplBuilder.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TplBuilder.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TplBuilder.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="F:TplBuilder.Config.DefaultNamespace">
+            <summary>
+            Build your version by replace DefaultNamespace by your namespace then undo checkout to revert to original version.
+            </summary>
+        </member>
+    </members>
+</doc>
