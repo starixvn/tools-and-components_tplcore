@@ -1,4 +1,0 @@
-c:\users\qui.nguyen\documents\visual studio 2010\Projects\TplBuilder\TplCore\bin\Release\TplCore.dll
-c:\users\qui.nguyen\documents\visual studio 2010\Projects\TplBuilder\TplCore\bin\Release\TplCore.pdb
-c:\users\qui.nguyen\documents\visual studio 2010\Projects\TplBuilder\TplCore\obj\Release\TplCore.dll
-c:\users\qui.nguyen\documents\visual studio 2010\Projects\TplBuilder\TplCore\obj\Release\TplCore.pdb
