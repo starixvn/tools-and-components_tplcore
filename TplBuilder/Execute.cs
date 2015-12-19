@@ -63,7 +63,7 @@ namespace TplBuilder
                 return;
 
             string file = files[0];
-            ProjectItem projectItem = Connect.ApplicationObject.Solution.FindProjectItem(file);
+            ProjectItem projectItem = VisualStudioRef.ApplicationObject.Solution.FindProjectItem(file);
             if (projectItem != null)
             {
                 ProjectItem parentItem = (ProjectItem)(projectItem.Collection.Parent);
@@ -84,7 +84,7 @@ namespace TplBuilder
         /// <param name="filePath"></param>
         public void DeleteProjectFile(string filePath)
         {
-            var projectItem = Connect.ApplicationObject.Solution.FindProjectItem(filePath);
+            var projectItem = VisualStudioRef.ApplicationObject.Solution.FindProjectItem(filePath);
             if (projectItem != null)
             {
                 projectItem.Delete();
@@ -150,11 +150,11 @@ namespace TplBuilder
                 // Check out item
                 try
                 {
-                    bool isCheckedOut = Connect.ApplicationObject.SourceControl.IsItemCheckedOut(outputFile);
-                    bool isUnderSCC = Connect.ApplicationObject.SourceControl.IsItemUnderSCC(outputFile);
+                    bool isCheckedOut = VisualStudioRef.ApplicationObject.SourceControl.IsItemCheckedOut(outputFile);
+                    bool isUnderSCC = VisualStudioRef.ApplicationObject.SourceControl.IsItemUnderSCC(outputFile);
                     if (!isCheckedOut && isUnderSCC)
                     {
-                        Connect.ApplicationObject.SourceControl.CheckOutItem(outputFile);
+                        VisualStudioRef.ApplicationObject.SourceControl.CheckOutItem(outputFile);
                     }
                 }
                 catch { 

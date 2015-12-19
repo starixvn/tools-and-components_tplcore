@@ -1,9 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TplBuilder", "TplBuilder\TplBuilder.csproj", "{9EF01307-6405-4223-AC2B-C6672B5DAADF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TplCore", "TplCore\TplCore.csproj", "{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.TplCoreGenerator", "Fanex.TplCoreGenerator\Fanex.TplCoreGenerator.csproj", "{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

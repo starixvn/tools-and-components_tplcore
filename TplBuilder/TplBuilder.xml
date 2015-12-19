@@ -4,42 +4,9 @@
         <name>TplBuilder</name>
     </assembly>
     <members>
-        <member name="M:TplBuilder.Utils.GetDirPath(System.String)">
+        <member name="F:TplBuilder.Config.DefaultNamespace">
             <summary>
-            Get directory path from file path
-            </summary>
-            <param name="filePath"></param>
-            <returns></returns>
-        </member>
-        <member name="M:TplBuilder.Utils.GetFileName(System.String)">
-            <summary>
-            Get file name from file path
-            </summary>
-            <param name="filePath"></param>
-            <returns></returns>
-        </member>
-        <member name="M:TplBuilder.Utils.IsEmptyFolder(System.String,System.String)">
-            <summary>
-            check folder is empty
-            </summary>
-            <param name="dirPath"></param>
-            <returns></returns>
-        </member>
-        <member name="F:TplBuilder.frmFileMapping.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:TplBuilder.frmFileMapping.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:TplBuilder.frmFileMapping.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+            Build your version by replace DefaultNamespace by your namespace then undo checkout to revert to original version.
             </summary>
         </member>
         <member name="T:TplBuilder.Connect">
@@ -118,6 +85,23 @@
             </summary>
             <param name="folder">Full path of a folder.</param>
         </member>
+        <member name="F:TplBuilder.frmFileMapping.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TplBuilder.frmFileMapping.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TplBuilder.frmFileMapping.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:TplBuilder.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -134,10 +118,26 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="F:TplBuilder.Config.DefaultNamespace">
+        <member name="M:TplBuilder.Utils.GetDirPath(System.String)">
             <summary>
-            Build your version by replace DefaultNamespace by your namespace then undo checkout to revert to original version.
+            Get directory path from file path
             </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TplBuilder.Utils.GetFileName(System.String)">
+            <summary>
+            Get file name from file path
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TplBuilder.Utils.IsEmptyFolder(System.String,System.String)">
+            <summary>
+            check folder is empty
+            </summary>
+            <param name="dirPath"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

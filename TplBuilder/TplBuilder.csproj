@@ -130,6 +130,7 @@
     <Compile Include="InfoLog.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="VisualStudioRef.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmFileMapping.resx">

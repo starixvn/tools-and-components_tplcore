@@ -15,7 +15,7 @@ namespace TplBuilder
         {
             try
             {
-                var window = Connect.ApplicationObject.Windows.Item(EnvDTE.Constants.vsWindowKindOutput);
+                var window = VisualStudioRef.ApplicationObject.Windows.Item(EnvDTE.Constants.vsWindowKindOutput);
                 _outputWindow = window.Object as OutputWindow;
             }
             catch (Exception ex)
