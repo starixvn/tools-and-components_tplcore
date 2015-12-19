@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Fanex.TplCoreGenerator.Company.6a9eb799-e167-4185-ab9e-098e5b3a9295" Version="1.0" Language="en-US" Publisher="Company" />
-    <DisplayName>Fanex.TplCoreGenerator</DisplayName>
+    <Identity Id="Fanex.TplBuilder.Company.0766dc50-70da-43a5-95ee-4d90577bffa5" Version="1.0" Language="en-US" Publisher="Company" />
+    <DisplayName>Fanex.TplBuilder</DisplayName>
     <Description>Empty VSIX Project.</Description>
   </Metadata>
   <Installation>

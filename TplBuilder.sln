@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TplBuilder", "TplBuilder\Tp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TplCore", "TplCore\TplCore.csproj", "{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.TplCoreGenerator", "Fanex.TplCoreGenerator\Fanex.TplCoreGenerator.csproj", "{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.TplBuilder", "Fanex.TplBuilder\Fanex.TplBuilder.csproj", "{7B135459-03D9-4763-9356-35DB4BACD2CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AFC812A-BA93-48DF-BC83-4E55AEDE3DF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8A2FD75-5986-4E3D-AE4F-0BC90EDB5AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B135459-03D9-4763-9356-35DB4BACD2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B135459-03D9-4763-9356-35DB4BACD2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B135459-03D9-4763-9356-35DB4BACD2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B135459-03D9-4763-9356-35DB4BACD2CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
