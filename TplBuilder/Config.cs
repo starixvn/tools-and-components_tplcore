@@ -8,7 +8,7 @@ namespace TplBuilder
 {
     public class Config
     {
-        public const string MsgCaption = "TplBuilder2010";
+        public const string MsgCaption = "Fanex.TplBuilder";
         public const string TplPath = "App_Code\\TplCore\\";
         public const string CsExt = ".cs";
         public const string TplExt = ".htm";
@@ -22,9 +22,9 @@ namespace TplBuilder
         public const string DefaultNamespace = "Agent";
 
         // Constants for command properties
-        public const string MAIN_COMMAND_NAME = "TplBuilder2010";
-        public const string MAIN_COMMAND_CAPTION = "TplBuilder2010 Add-in";
-        public const string MAIN_COMMAND_TOOLTIP = "HTML Template Builder Add-in Tool for Visual Studio 2010 and higher!";
+        public const string MAIN_COMMAND_NAME = "Fanex.TplBuilder";
+        public const string MAIN_COMMAND_CAPTION = "Fanex.TplBuilder Add-in";
+        public const string MAIN_COMMAND_TOOLTIP = "HTML Template Builder Add-in Tool for Visual Studio 2015 and higher!";
         public const int MY_IMAGE_ID = 59;
     }
 }

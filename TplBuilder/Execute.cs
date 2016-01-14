@@ -114,7 +114,7 @@ namespace TplBuilder
             }
             else
             {
-                siteName = CurrentProject.Name;
+                siteName = CurrentProject.Properties.Item("DefaultNamespace").Value.ToString();
                 if (IsWebsite)
                 {
                     siteName = siteName.Remove(siteName.Length - 1, 1);
