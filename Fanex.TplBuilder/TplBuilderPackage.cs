@@ -153,7 +153,7 @@ namespace Fanex.TplBuilder
             }
             catch (Exception ex)
             {
-                ErrorLog.Log(ex);
+                InfoLog.Log(ex);
             }
         }
 
@@ -201,7 +201,7 @@ namespace Fanex.TplBuilder
             }
             catch (Exception ex)
             {
-                ErrorLog.Log(ex);
+                InfoLog.Log(ex);
             }
         }
 
@@ -220,7 +220,7 @@ namespace Fanex.TplBuilder
             }
             catch (Exception ex)
             {
-                ErrorLog.Log(ex);
+                InfoLog.Log(ex);
             }
         }
 

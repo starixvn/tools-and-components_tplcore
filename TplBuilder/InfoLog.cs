@@ -39,5 +39,10 @@ namespace TplBuilder
                 ErrorLog.Log(ex);
             }
         }
+
+        public static void Log(Exception ex)
+        {
+            Log(ex.ToString());
+        }
     }
 }
