@@ -52,6 +52,11 @@ namespace TplCore.Element
 
             if (relativeUrl.Contains(TplSettings.DOTJS) || !TplSettings.UseCookieless)
             {
+                if(!relativeUrl.Contains(TplSettings.Question.ToString()))
+                {
+                    relativeUrl += TplSettings.Question + TplSettings.UrlVersion;
+                }
+
                 return TplSettings.GetBaseUrl() + relativeUrl;
             }
 
@@ -69,7 +74,15 @@ namespace TplCore.Element
             relativeUrl = FindUrl(relativeUrl);
 
             string version = string.IsNullOrEmpty(TplSettings.UrlVersion) ? string.Empty : (nextMetaChar + TplSettings.UrlVersion);
-            return AbsoluteUrl(relativeUrl) + version;
+
+            relativeUrl = AbsoluteUrl(relativeUrl);
+
+            if (!relativeUrl.Contains(TplSettings.Question.ToString()))
+            {
+                relativeUrl += version;
+            }
+
+            return relativeUrl;
         }
 
         /// <summary>

@@ -215,7 +215,7 @@
         internal const string DOTJS = ".js";
         internal const string DOTCSS = ".css";
 
-        public static string UrlVersion = string.Empty;
+        public static string UrlVersion = DateTime.Now.ToString("yyyyMMdd");
 
         /// <summary>
         /// Find and correct relative url
