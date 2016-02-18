@@ -18,6 +18,8 @@ using Microsoft.Win32;
 using EnvDTE;
 using TplBuilder;
 using EnvDTE80;
+using System.Windows.Forms;
+using System.IO;
 
 namespace Fanex.TplBuilder
 {
@@ -76,7 +78,19 @@ namespace Fanex.TplBuilder
 
             VisualStudioRef.ApplicationObject = (DTE2)GetService(typeof(DTE));
 
-            RegisterEvents();
+            Properties props = VisualStudioRef.ApplicationObject.Solution.Properties;
+
+            foreach (Property prop in props)
+            {
+                if(prop.Name == "Description" 
+                    && !string.IsNullOrWhiteSpace(prop.Value.ToString())
+                    && prop.Value.ToString().ToLower().Contains("enabletplcore"))
+                {
+                    RegisterEvents();
+
+                    return;
+                }
+            }
         }
 
         #region Register Events
