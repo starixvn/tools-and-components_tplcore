@@ -1,8 +1,5 @@
-﻿using System;
-using System.Text;
+﻿using System.IO;
 using EnvDTE;
-using System.IO;
-using System.Collections.Generic;
 using TplCore.Compiler;
 
 namespace TplBuilder
@@ -100,7 +97,7 @@ namespace TplBuilder
             if (!File.Exists(filePath))
                 return;
 
-            string fileName = Utils.GetFileName(filePath);
+            string fileName = UppercaseFirstLetter(Utils.GetFileName(filePath));
             string dirPath = Utils.GetDirPath(filePath);
             string relativePath = dirPath.Remove(0, ProjectPath.Length);
             string dir = "";
@@ -157,8 +154,8 @@ namespace TplBuilder
                         VisualStudioRef.ApplicationObject.SourceControl.CheckOutItem(outputFile);
                     }
                 }
-                catch { 
-                    
+                catch
+                {
                 }
 
                 // Save to file
@@ -216,6 +213,22 @@ namespace TplBuilder
                 htmFileDir = csFileDir.Replace(OutputPath, "");
             }
             return htmFileDir + Utils.GetHtmFileName(csFileName);
+        }
+
+        /// <summary>
+        /// http://www.dotnetperls.com/uppercase-first-letter
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        private static string UppercaseFirstLetter(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return string.Empty;
+            }
+            char[] arrayLetter = text.ToCharArray();
+            arrayLetter[0] = char.ToUpper(arrayLetter[0]);
+            return new string(arrayLetter);
         }
     }
 }

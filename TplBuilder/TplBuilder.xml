@@ -85,6 +85,13 @@
             </summary>
             <param name="folder">Full path of a folder.</param>
         </member>
+        <member name="M:TplBuilder.Execute.UppercaseFirstLetter(System.String)">
+            <summary>
+            http://www.dotnetperls.com/uppercase-first-letter
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
         <member name="F:TplBuilder.frmFileMapping.components">
             <summary>
             Required designer variable.
